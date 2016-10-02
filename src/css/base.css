@@ -1,0 +1,107 @@
+body {
+    background-color: #2D2D2D;
+    color: #F6F8F7;
+    font-family: 'Source Code Pro0', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 64px;
+    width: 480px
+}
+
+h1 {
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0;
+    font-weight: 600;
+    margin-bottom: 24px
+}
+
+p {
+    margin: 0
+}
+
+a,
+a:visited {
+    -webkit-transition-property: color, border-color;
+    -moz-transition-property: color, border-color;
+    -o-transition-property: color, border-color;
+    transition-property: color, border-color;
+    -webkit-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    color: #F6F8F7;
+    border-bottom: 1px solid #A2EAF8;
+    text-decoration: none;
+}
+
+a:hover,
+a:visited:hover {
+    -webkit-transition-property: color, border-color;
+    -moz-transition-property: color, border-color;
+    -o-transition-property: color, border-color;
+    transition-property: color, border-color;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    color: #A2EAF8;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.infotext {
+    margin-bottom: 24px
+}
+
+.contact {
+    margin-bottom: 24px
+}
+
+@media screen and (max-width: 608px) {
+    body {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 35px auto;
+        width: 310px
+    }
+    h1 {
+        font-size: 16px;
+        line-height: 22.5px;
+        margin-bottom: 12px;
+    }
+    
+    .infotext {
+        margin-bottom: 22.5px
+    }
+	
+    .contact {
+        margin-bottom: 22.5px
+    }
+
+	hr {
+		margin-top: 22.5px;
+		margin-bottom: 22.5px;
+	}
+}
+
+keyword {
+	color: #CEF777;
+}
+
+highlight {
+	color: #A2EAF8;
+}
+
+string {
+	color: #EFDC73;
+}
