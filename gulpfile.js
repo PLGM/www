@@ -5,14 +5,17 @@ var gulp = require('gulp'),
 
 
 gulp.task('build', function () {
-	return gulp.src('./src/index.html')
-    		.pipe(inlinesource())
-    		.pipe(htmlmin({
-    			minifyCSS: true
-    		}))
-    		.pipe(gulp.dest('./build'));
+		gulp.src('./src/font/**/*')		
+		.pipe(gulp.dest('./build'));
+
+		gulp.src('./src/index.html')
+		.pipe(inlinesource())
+		.pipe(htmlmin({
+			minifyCSS: true
+		}))
+    	.pipe(gulp.dest('./build'));
 });
 
 gulp.task('deploy', shell.task([
-  'scp build/index.html root@plgm.403.io:/var/www/plgm.403.io/',
+  'rsync -rvz --delete build/* root@plgm.403.io:/var/www/plgm.403.io/',
 ]));
